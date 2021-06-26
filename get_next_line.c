@@ -51,21 +51,6 @@ char	*get_line(char *str)
 	return (srch);
 }
 
-int	get_n(char *str)
-{
-	int		i;
-
-	i = 0;
-	if (!str)
-		return (0);
-	while (str[i++])
-	{
-		if (str[i] == '\n')
-			return (1);
-	}
-	return (0);
-}
-
 int	get_free(int reader, char **buffer)
 {
 	if (reader == -1)
